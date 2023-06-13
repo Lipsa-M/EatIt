@@ -1,0 +1,267 @@
+/* input {
+  margin-top: 0.2rem;
+} */
+/* .modal-container {
+/*   
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 468px;
+  height: 401px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+ 
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  /* width:468px;
+  height:401px; */
+  /* border-radius: 30px; */
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f3;
+}
+.close-span{
+  position: relative;
+  top: 60px;
+  left: 420px;
+  font-size: 40px;
+  cursor: pointer;
+}
+:where(.container, form, .input-field, header) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  /* position: relative;
+  width:468px;
+  height:401px;
+  /* max-width: 350px; */
+  /* background-color: #ffffff; */
+  /* padding: 20px; */
+  /* text-align: center; */
+  /* border-radius:30px; */
+  display: flex;
+  flex-direction: column;
+  width:468px;
+  height: auto;
+  background: #fff;
+  padding: 30px 65px;
+  border-radius: 30px;
+  row-gap: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+} */
+.close h2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-title {
+  width: 141px;
+  height: 36px;
+  left: 60px;
+  top: 35px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #f44336;
+}
+
+.phone-input {
+  /* width: 70%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 10px; */
+  box-sizing: border-box;
+
+  /* Auto layout */
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 10px;
+  top: 114px;
+  left: 60px;
+  right: 60px;
+  width: 348px;
+  height: 51px;
+
+  background: #ffffff;
+  /* Background/Stroke */
+
+  border: 1px solid #a2a2a6;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  /* order: 1; */
+  flex-grow: 0;
+}
+
+.send-otp-button {
+  /* width: 75%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px; */
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 71px;
+  gap: 10px;
+
+  /* position: absolute; */
+  width: 348px;
+  height: 66px;
+  right: 60px;
+  top: 181px;
+
+  /* Red */
+
+  background: #eb5757;
+  border-radius: 10px;
+}
+.button-text {
+  /* Send OTP */
+
+  width: 89px;
+  height: 23px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 124% */
+
+  text-align: center;
+
+  /* Gray 6 */
+
+  color: #f2f2f2;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* .divider {
+  margin-top: 20px;
+} */
+
+.continue-text {
+  margin-top: 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  /* position: absolute; */
+  top: 102px;
+  /* margin-inline: 10px; */
+  
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin: 0 5px;
+  color: #000000;
+}
+.facebook-icon img {
+  margin-top: 4px;
+  width: 44px;
+  height: 44px;
+}
+.google-icon img {
+  width: 60px;
+  height: 60px;
+}
+.apple-icon img {
+  width: 48px;
+  height: 48px;
+}
+p {
+  position: relative;
+  /* top: 194px; */
+  text-align: center;
+}
+p:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  background: #000000;
+  left: 0;
+  top: 50%;
+}
+p:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  background: #000000;
+  right: 0;
+  top: 50%;
+}
+.first-name {
+  height: 21px;
+  top: 87px;
+  left: 66px;
+  /* position: absolute; 
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Text/Primary */
+
+  color: #312e49;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.signup-text{
+  text-align: center;
+}
+.signup-text h6{
+  font-size: small;
+  font-weight: 500;
+}

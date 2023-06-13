@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal-container">
+      <div class="close"><span class="close-span" onclick="this.parentNode.parentNode.remove(); return false;">&times;</span></div>
+        <div class="modal-content">
+          <h2 class="modal-title"><b>Hey there!!</b></h2>
+          <label class="first-name"> Phone number</label>
+          <input type="text" class="phone-input" placeholder="Your phone number">
+          <button class="send-otp-button" onclick="location.href='otp.html'"><span class="button-text">SEND OTP</span></button>
+          <p class="continue-text"><span>or continue with</span></p>
+          <div class="social-icons">
+            <div class="google-icon">
+              <img src="google.png" alt="">
+            </div>
+            <div class="facebook-icon">
+              <img src="face.png">
+            </div>
+            <div class="apple-icon">
+              <img src="apple.png" alt="">
+            </div>
+          </div>
+          <div class="signup-text">
+            <h6>Don't hava a account? <a href="#">Sign Up</a></h6>
+          </div>
+        </div>
+      </div>
+           
+</body>
+</html>
